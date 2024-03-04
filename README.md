@@ -8,6 +8,11 @@
    ``` 
    ssh-keygen -t ed25519 -C "funokobe@gmail.com" -f D:\usage tool\dev tool\ssh 
    ``` 
+- 启用ssh代理
+  ~~~
+  eval $(ssh-agent)
+  ~~~
+
 - 将保存的密钥添加到GitHub账户
 
   ~~~ 
@@ -28,5 +33,5 @@
   
 - 初始化一个新的 Git 仓库
   ~~~
-  git init
+  gitgit init
   ~~~
