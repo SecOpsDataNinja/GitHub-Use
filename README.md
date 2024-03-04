@@ -10,7 +10,12 @@
    ``` 
 - 将保存的密钥添加到GitHub账户
 
-- 将本地密钥添加到ssh
   ~~~ 
   ssh-add "D:\usage tool\dev tool\ssh\id_ed25519" 
   ~~~
+  ![ssh的位置](image-1.png)
+- 测试是否可以正常连接到GitHub
+  ~~~
+   ssh -T git@github.com
+  ~~~
+  ![成功的截图](image.png)
