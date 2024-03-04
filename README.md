@@ -9,4 +9,8 @@
    ssh-keygen -t ed25519 -C "funokobe@gmail.com" -f D:\usage tool\dev tool\ssh 
    ``` 
 - 将保存的密钥添加到GitHub账户
-  
+
+- 将本地密钥添加到ssh
+  ~~~ 
+  ssh-add "D:\usage tool\dev tool\ssh\id_ed25519" 
+  ~~~
