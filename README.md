@@ -26,3 +26,7 @@
   git config --global user.email "xxxxxxx@gmail.com"
   ~~~
   
+- 初始化一个新的 Git 仓库
+  ~~~
+  git init
+  ~~~
