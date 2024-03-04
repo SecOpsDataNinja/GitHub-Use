@@ -31,7 +31,7 @@
   git config --global user.email "xxxxxxx@gmail.com"
   ~~~
   
->由于每次新开一个终端都要重新启用ssh代理，所以一次解决。 
+>由于每次新开一个终端都要重新启用ssh代理，所以一次解决。
 > 在 Git Bash 中运行以下命令打开该文件：
 > ~~~
 > vim ~/.ssh/config
@@ -49,7 +49,33 @@
 >- 保存并关闭文件：
 >- 在 Vim 编辑器中，你可以按下 Esc 键，然后输入 :wq 并按下 Enter 键保存并关闭文件
 
-### 初始化一个新的 Git 仓库
+### git基础操作
+1. 创建本地仓库
+  ~~~
+  mkdir my_repository
+  cd my_repository
+  ~~~
+2. 初始化一个新的 Git 仓库
   ~~~
   git init
+  ~~~
+3. 添加文件到仓库：-要添加到仓库的文件复制到仓库目录中。然后运行以下命令：
+  ~~~
+  git commit -m "Initial commit"
+  ~~~
+4. 提交文件到仓库
+  ~~~
+  git commit -m "Initial commit"
+  ~~~
+5. 在 GitHub 上创建远程仓库,获取仓库的 URL。
+6. 将本地仓库与远程仓库关联：
+  ~~~
+  git remote add origin <远程仓库的URL>
+  
+  # 例如
+  git remote add origin https://github.com/SecOpsDataNinja/GitHub-Use.git
+  ~~~
+7. 推送本地仓库到远程仓库
+  ~~~
+  git push -u origin main
   ~~~
