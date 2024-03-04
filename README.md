@@ -31,7 +31,26 @@
   git config --global user.email "xxxxxxx@gmail.com"
   ~~~
   
+>由于每次新开一个终端都要重新启用ssh代理，所以一次解决。 
+> 在 Git Bash 中运行以下命令打开该文件：
+> ~~~
+> vim ~/.ssh/config
+> ~~~
+> 在打开的配置文件中添加以下内容
+> ~~~
+> Host github.com
+>    HostName github.com
+>    IdentityFile "D:/usage tool/dev tool/ssh/id_rsa"
+> ~~~
+>- 这个配置指定了当连接到 github.com 时要使用的 SSH 密钥的路径。 
+>- Host 行定义了你要连接的主机名或者主机别名。
+>- HostName 行指定了实际的主机名。
+>- IdentityFile 行指定了你的 SSH 私钥文件的路径。 (**请注意，文件路径需要用引号括起来，以防止路径中的空格被误解。**)
+
+>- 保存并关闭文件：
+>- 在 Vim 编辑器中，你可以按下 Esc 键，然后输入 :wq 并按下 Enter 键保存并关闭文件
+
 - 初始化一个新的 Git 仓库
   ~~~
-  gitgit init
+  git init
   ~~~
