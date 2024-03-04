@@ -19,3 +19,10 @@
    ssh -T git@github.com
   ~~~
   ![成功的截图](image.png)
+
+- 配置自己的用户名和邮箱
+  ~~~
+  git config --global user.name "mygitcode"
+  git config --global user.email "xxxxxxx@gmail.com"
+  ~~~
+  
